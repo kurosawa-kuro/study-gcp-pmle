@@ -35,6 +35,14 @@
 | [07_モデル運用監視の判断.md](07_モデル運用監視の判断.md) | モデル運用監視の判断 | Model Monitoring（skew / drift / attribution drift） | ML ソリューションの監視 |
 | [08_責任あるAIと説明可能性と評価.md](08_責任あるAIと説明可能性と評価.md) | 責任あるAI・説明可能性・評価 | Explainable AI / Model Evaluation / fairness / Sensitive Data Protection | 責任あるAI・評価 |
 
+### Phase 3（生成AI + 横断）
+
+| ファイル | 章 | カバーするサービス | 出題ドメイン |
+|---|---|---|---|
+| [09_生成AI活用とRAGの判断.md](09_生成AI活用とRAGの判断.md) | 生成AI活用とRAG | Model Garden / Gemini API / Vertex AI Search / Embeddings + Vector Search / Grounding | 生成AI |
+| [10_生成AIチューニングと評価.md](10_生成AIチューニングと評価.md) | 生成AIチューニングと評価 | プロンプト設計 / Fine-tuning / 蒸留 / Gen AI 評価 | 生成AI |
+| [11_データ所在地とコストとセキュリティ.md](11_データ所在地とコストとセキュリティ.md) | データ所在地・コスト・セキュリティ | region / VPC-SC / CMEK / IAM・WIF / コスト最適化 | 横断 |
+
 ### 付録
 
 | ファイル | 章 | カバーするサービス | 出題ドメイン |
@@ -62,7 +70,7 @@
 |---|---|---|
 | Phase 1 | 序章 + 最重点 4 章 + 付録A/B | ✅ 完了 |
 | Phase 2 | データ・特徴量管理 / 実験管理・系譜 / 運用監視 / 責任あるAI・評価 | ✅ 完了 |
-| Phase 3 | 生成AI（活用・RAG / チューニング・評価）/ 横断（コスト・セキュリティ） | ⬜ 未着手 |
+| Phase 3 | 生成AI（活用・RAG / チューニング・評価）/ 横断（コスト・セキュリティ） | ✅ 完了（生成AIサービス名は要公式確認） |
 | Phase 4 | 全体校正 + 付録C 直前チェックリスト | ⬜ 未着手 |
 
 詳細は [`../doc/02_移行ロードマップ.md`](../doc/02_移行ロードマップ.md)。
