@@ -1,22 +1,33 @@
-# your-project
+# study-gcp-pmle
 
-プロジェクト名に置き換える。簡易説明をここに書く（何を解決するか・主要機能）。
+Google Cloud Professional Machine Learning Engineer (PMLE) に**合格直結**するための教材。
+技術を網羅説明する本ではなく、**問題文の制約条件から正解サービス・構成・運用判断を選ぶための「判断辞書」**として設計する。
+
+主要コンテンツ部品:
+
+- **章テンプレート** — 全章を「選ぶ条件 / 選ばない条件 / ひっかけ / 閾値 / 代表問題」で統一
+- **比較表** — 似たサービスの閾値（BigQuery ML vs AutoML vs Custom Training 等）
+- **シグナル語辞典** — 問題文の表現から疑うべき選択肢を引く
+- **判断フローチャート** — 3〜7 分岐で即断する
+
+設計意図の詳細は [`doc/01_仕様と設計.md`](doc/01_仕様と設計.md) を参照。
 
 ## 技術スタック
 
 | レイヤー | 技術 |
 |---------|------|
-| 言語 | TODO |
-| フレームワーク | TODO |
-| データベース | TODO |
-| インフラ | TODO |
+| 言語 | 日本語 Markdown（英単語はそのまま可） |
+| フレームワーク | なし（コンテンツ教材） |
+| データベース | なし |
+| インフラ | 配布形態は未確定（静的サイト / PDF / リポジトリ閲覧のいずれか） |
 
 ## セットアップ
 
 ```bash
-make setup    # 依存取得 + ビルド
-make dev      # 開発サーバー起動
-make test     # テスト
+make setup    # ツール取得 (markdownlint 等)
+make fmt      # Markdown 整形
+make lint     # markdownlint / 静的検証
+make test     # リンク切れ・フォーマット検証
 ```
 
 設定は `env/config.yaml`（非機密）、`env/secret.yaml`（ローカル秘密情報）、Doppler（チーム共有・本番秘密情報）で管理する。
@@ -29,7 +40,7 @@ make test     # テスト
 ├── env/
 │   ├── config.yaml   # プロジェクト固有設定（非機密）
 │   └── secret.yaml   # ローカル秘密情報（コミット禁止）
-├── src/              # アプリケーションコード
+├── src/              # 教材の章原稿 (Markdown)
 └── doc/              # 仕様・設計・運用ドキュメント
 ```
 
