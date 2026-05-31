@@ -5,7 +5,7 @@
 # ===========================================
 
 # --- アプリケーション ---
-projectName: <your-project>
+projectName: study-gcp-pmle
 appEnv: local
 port: 8080
 logLevel: info
